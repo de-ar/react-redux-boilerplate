@@ -1,2 +1,3 @@
-export { buyCake } from './cake';
-export { buyIcecream } from './icecream';
+export * from './cake';
+export * from './icecream';
+export * from './user';

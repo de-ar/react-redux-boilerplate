@@ -4,17 +4,15 @@ const initialState = {
   qty: 10,
 };
 
-const cakeReducer = (state = initialState, action) => {
-  switch (action.type) {
+export default (state = initialState, { type, payload }) => {
+  switch (type) {
     case BUY_CAKE:
       return {
         ...state,
-        qty: state.qty - action.payload,
+        qty: state.qty - payload,
       };
 
     default:
       return state;
   }
 };
-
-export default cakeReducer;

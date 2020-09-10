@@ -1,14 +1,10 @@
 import React from 'react';
-import Cake from './containers/Cake';
-import Icecream from './containers/Icecream';
-import NewCake from './containers/NewCake';
+import User from './containers/User';
 
 const App = () => {
   return (
     <center>
-      <NewCake />
-      {/* <Cake /> */}
-      <Icecream />
+      <User />
     </center>
   );
 };

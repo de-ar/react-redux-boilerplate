@@ -4,8 +4,8 @@ const initialState = {
   qty: 20,
 };
 
-const icecreamReducer = (state = initialState, action) => {
-  switch (action.type) {
+export default (state = initialState, { type }) => {
+  switch (type) {
     case BUY_ICECREAM:
       return {
         ...state,
@@ -16,5 +16,3 @@ const icecreamReducer = (state = initialState, action) => {
       return state;
   }
 };
-
-export default icecreamReducer;
